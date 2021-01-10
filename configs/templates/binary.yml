@@ -51,6 +51,7 @@ stages:
                 - transform: A.ToGray
                 - transform: A.RGBShift
                 - transform: A.ChannelShuffle
+                - transform: A.MotionBlur
             - transform: A.RandomBrightnessContrast
               brightness_limit: 0.5
               contrast_limit: 0.5
